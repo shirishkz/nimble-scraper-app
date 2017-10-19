@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  query: MyString
+  adword_top: 1
+  adword_bottom: 1
+  adword_sum: 1
+  non_adwords_sum: 1
+  total_links: 1
+  search_total: MyString
+
+two:
+  query: MyString
+  adword_top: 1
+  adword_bottom: 1
+  adword_sum: 1
+  non_adwords_sum: 1
+  total_links: 1
+  search_total: MyString

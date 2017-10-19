@@ -1,0 +1,52 @@
+<%= form_with(model: keyword, local: true) do |form| %>
+  <% if keyword.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(keyword.errors.count, "error") %> prohibited this keyword from being saved:</h2>
+
+      <ul>
+      <% keyword.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :query %>
+    <%= form.text_field :query, id: :keyword_query %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adword_top %>
+    <%= form.number_field :adword_top, id: :keyword_adword_top %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adword_bottom %>
+    <%= form.number_field :adword_bottom, id: :keyword_adword_bottom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adword_sum %>
+    <%= form.number_field :adword_sum, id: :keyword_adword_sum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :non_adwords_sum %>
+    <%= form.number_field :non_adwords_sum, id: :keyword_non_adwords_sum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_links %>
+    <%= form.number_field :total_links, id: :keyword_total_links %>
+  </div>
+
+  <div class="field">
+    <%= form.label :search_total %>
+    <%= form.text_field :search_total, id: :keyword_search_total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

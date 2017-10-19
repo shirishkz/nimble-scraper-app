@@ -1,0 +1,61 @@
+<h4> Scraper Result for "<%= @keyword.query %>"</h4>
+<br>
+
+<p>
+  <strong>Number​ of​ AdWords​ - Top Position: </strong>
+  <%= @keyword.adword_top %>
+</p>
+
+<p>
+  <strong>Number​ of​ AdWords​ - Bottom Position: </strong>
+  <%= @keyword.adword_bottom %>
+</p>
+
+<p>
+  <strong>Total number​ of​ AdWords​: </strong>
+  <%= @keyword.adword_sum %>
+</p>
+
+<p>
+  <strong>URL's of​ AdWords​ - Top Position: </strong>
+  <!--<#% if @urladwordtop.all? &:nil? %>-->
+      <!--<%#= 'N/A' %>-->
+  <!--<#% else %>-->
+      <!--<br>-->
+      <!--<ul>-->
+        <!--<#% @urladwordtop.each do |ads| %>-->
+            <!--<li><%#= ads.inner_text %></li>-->
+        <!--<#% end %>-->
+      <!--</ul>-->
+  <!--<#% end %>-->
+</p>
+
+<p>
+  <strong>URL's of​ AdWords​ - Bottom Position: </strong>
+</p>
+
+<p>
+  <strong>Number​ of​ non-AdWords​: </strong>
+  <%= @keyword.non_adwords_sum %>
+</p>
+
+<p>
+  <strong>URL's​ of​ non-AdWords​: </strong>
+</p>
+
+<p>
+  <strong>Total number of links:  </strong>
+  <%= @keyword.total_links %>
+</p>
+
+<p>
+  <strong>Total number of search results: </strong>
+  <%= @keyword.search_total %>
+</p>
+
+<p>
+  <strong>HTML cache of search: </strong>
+</p>
+
+<br>
+<%= link_to 'Back', keywords_path %>
