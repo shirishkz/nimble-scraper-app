@@ -10,9 +10,7 @@ class Keyword < ApplicationRecord
       adword_bottom = 0
       adword_sum = adword_top + adword_bottom
       url = html.css('cite')
-      # @url_adword_top = url.take(adword_sum)
       non_adword_sum = url.size - adword_sum
-      # @url_non_adword = url.drop(adword_sum)
       total_links = adword_sum + non_adword_sum
       search_total = html.css('div#resultStats').to_s.scan(/\d/).join('')
 
