@@ -1,3 +1,4 @@
+ruby '2.4.2'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -18,20 +19,14 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
+# Nokogiri
+gem 'nokogiri'
 # OAuth-Twitter
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 # OAuth-GitHb
 gem "omniauth-github", github: 'intridea/omniauth-github'
 # Bootstrap 4
 gem 'bootstrap', :github => 'twbs/bootstrap-rubygem'
-# Bourbon
-# gem 'bourbon', github: 'thoughtbot/bourbon'
-# Bitters
-# gem 'bitters', github: 'thoughtbot/bitters'
-# Refills
-# gem 'refills', github: 'thoughtbot/refills'
-# Neat
-# gem 'neat', github: 'thoughtbot/neat'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -39,8 +34,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -68,6 +61,3 @@ group :test do
   gem 'simplecov-json', require: false
   gem 'simplecov-rcov', require: false
 end
-
-# Ruby version
-ruby '2.4.2'

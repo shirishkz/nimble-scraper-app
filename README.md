@@ -19,7 +19,7 @@ A web​ application that​ will​ extract large amounts of​ data​ from​
 ### CSV Examples
 
 ```
-id,term
+id,query
 1,lazada
 2,11street
 3,samsung
