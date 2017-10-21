@@ -3,5 +3,8 @@ Rails.application.routes.draw do
     collection { post :import }
   end
 
+  get '/auth/:provider/callback', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+
   root 'keywords#index'
 end

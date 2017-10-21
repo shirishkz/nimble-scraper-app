@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  query: MyString
+  query: nodejs
   adword_top: 1
-  adword_bottom: 1
+  adword_bottom: 0
   adword_sum: 1
-  non_adwords_sum: 1
-  total_links: 1
-  search_total: MyString
+  non_adwords_sum: 5
+  total_links: 6
+  search_total: 1000000
 
 two:
-  query: MyString
-  adword_top: 1
-  adword_bottom: 1
-  adword_sum: 1
-  non_adwords_sum: 1
-  total_links: 1
-  search_total: MyString
+  query: vuejs
+  adword_top: 0
+  adword_bottom: 0
+  adword_sum: 0
+  non_adwords_sum: 6
+  total_links: 6
+  search_total: 2000000

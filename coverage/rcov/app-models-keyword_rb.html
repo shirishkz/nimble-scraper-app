@@ -25,12 +25,12 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="app-models-keyword_rb.html">app/models/keyword.rb</a></td>
-            <td class='right_align'><tt>32</tt></td>
+            <td class='right_align'><tt>30</tt></td>
             <td class='right_align'><tt>22</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>37.50%</tt></div>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>33.33%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:38px"></div>
-        <div class="uncovered" style="width:62px"></div>
+        <div class="covered" style="width:33px"></div>
+        <div class="uncovered" style="width:67px"></div>
       </div></td>
             <td class="left_align"><div class="percent_graph_legend"><tt class=''>9.09%</tt></div>
       <div class="percent_graph">
@@ -86,70 +86,64 @@
         <tr class="uncovered">
           <td><pre><a name="line13">13</a>       url = html.css(&#39;cite&#39;)</pre></td>
         </tr>
-        <tr class="inferred">
-          <td><pre><a name="line14">14</a>       # @url_adword_top = url.take(adword_sum)</pre></td>
+        <tr class="uncovered">
+          <td><pre><a name="line14">14</a>       non_adword_sum = url.size - adword_sum</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line15">15</a>       non_adword_sum = url.size - adword_sum</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line16">16</a>       # @url_non_adword = url.drop(adword_sum)</pre></td>
+          <td><pre><a name="line15">15</a>       total_links = adword_sum + non_adword_sum</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line17">17</a>       total_links = adword_sum + non_adword_sum</pre></td>
-        </tr>
-        <tr class="uncovered">
-          <td><pre><a name="line18">18</a>       search_total = html.css(&#39;div#resultStats&#39;).to_s.scan(/\d/).join(&#39;&#39;)</pre></td>
+          <td><pre><a name="line16">16</a>       search_total = html.css(&#39;div#resultStats&#39;).to_s.scan(/\d/).join(&#39;&#39;)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line19">19</a> </pre></td>
+          <td><pre><a name="line17">17</a> </pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line20">20</a>       if keyword.count == 1</pre></td>
+          <td><pre><a name="line18">18</a>       if keyword.count == 1</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line21">21</a>         keyword.first.update_attributes(keyword_hash)</pre></td>
+          <td><pre><a name="line19">19</a>         keyword.first.update_attributes(keyword_hash)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line22">22</a>       else</pre></td>
+          <td><pre><a name="line20">20</a>       else</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line23">23</a>         keyword_hash[&#39;adword_top&#39;] = adword_top</pre></td>
+          <td><pre><a name="line21">21</a>         keyword_hash[&#39;adword_top&#39;] = adword_top</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line24">24</a>         keyword_hash[&#39;adword_bottom&#39;] = adword_bottom</pre></td>
+          <td><pre><a name="line22">22</a>         keyword_hash[&#39;adword_bottom&#39;] = adword_bottom</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line25">25</a>         keyword_hash[&#39;adword_sum&#39;] = adword_sum</pre></td>
+          <td><pre><a name="line23">23</a>         keyword_hash[&#39;adword_sum&#39;] = adword_sum</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line26">26</a>         keyword_hash[&#39;non_adwords_sum&#39;] = non_adword_sum</pre></td>
+          <td><pre><a name="line24">24</a>         keyword_hash[&#39;non_adwords_sum&#39;] = non_adword_sum</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line27">27</a>         keyword_hash[&#39;total_links&#39;] = total_links</pre></td>
+          <td><pre><a name="line25">25</a>         keyword_hash[&#39;total_links&#39;] = total_links</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line28">28</a>         keyword_hash[&#39;search_total&#39;] = search_total</pre></td>
+          <td><pre><a name="line26">26</a>         keyword_hash[&#39;search_total&#39;] = search_total</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line29">29</a>         Keyword.create! keyword_hash</pre></td>
+          <td><pre><a name="line27">27</a>         Keyword.create! keyword_hash</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line30">30</a>       end</pre></td>
+          <td><pre><a name="line28">28</a>       end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line31">31</a>     end</pre></td>
+          <td><pre><a name="line29">29</a>     end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line32">32</a>   end</pre></td>
+          <td><pre><a name="line30">30</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line33">33</a> end</pre></td>
+          <td><pre><a name="line31">31</a> end</pre></td>
         </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2017-10-20 23:28:46 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2017-10-22 00:30:26 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>

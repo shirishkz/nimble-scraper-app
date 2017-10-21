@@ -27,6 +27,8 @@ gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem "omniauth-github", github: 'intridea/omniauth-github'
 # Bootstrap 4
 gem 'bootstrap', :github => 'twbs/bootstrap-rubygem'
+# DotEnv
+gem 'dotenv-rails', groups: %i[development test]
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

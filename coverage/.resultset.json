@@ -1,6 +1,20 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/models/user.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/models/keyword.rb": [
         1,
         1,
@@ -14,9 +28,7 @@
         0,
         0,
         0,
-        null,
         0,
-        null,
         0,
         0,
         null,
@@ -33,11 +45,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/models/application_record.rb": [
-        1,
-        1,
         null
       ],
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/controllers/keywords_controller.rb": [
@@ -80,6 +87,13 @@
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        3,
+        null,
+        null,
+        1,
         null
       ],
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/helpers/application_helper.rb": [
@@ -87,6 +101,10 @@
         null
       ],
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/helpers/keywords_helper.rb": [
+        1,
+        null
+      ],
+      "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
@@ -111,8 +129,30 @@
       "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/jobs/application_job.rb": [
         0,
         0
+      ],
+      "/home/shirishk/Documents/RubymineProjects/nimbl3-scraper/app/controllers/sessions_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1508516926
+    "timestamp": 1508607026
   }
 }

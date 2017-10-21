@@ -25,8 +25,8 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="app-controllers-application_controller_rb.html">app/controllers/application_controller.rb</a></td>
-            <td class='right_align'><tt>3</tt></td>
-            <td class='right_align'><tt>2</tt></td>
+            <td class='right_align'><tt>10</tt></td>
+            <td class='right_align'><tt>6</tt></td>
             <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
       <div class="percent_graph">
         <div class="covered" style="width:100px"></div>
@@ -57,12 +57,33 @@
           <td><pre><a name="line3">3</a>   protect_from_forgery with: :exception</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line4">4</a> end</pre></td>
+          <td><pre><a name="line4">4</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>   private</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   def current_user</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>     @current_user ||= User.find_by(id: session[:user_id])</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   helper_method :current_user</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a> end</pre></td>
         </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2017-10-20 23:28:46 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2017-10-22 00:30:26 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>
