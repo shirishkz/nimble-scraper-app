@@ -3,7 +3,6 @@ class KeywordsController < ApplicationController
 
   def index
     @keywords = Keyword.all.sort_by(&:updated_at)
-    # @keywords = Keyword.paginate(per_page: 10, page: params[:page])
   end
 
   def show
