@@ -1,21 +1,20 @@
 <h3>Listing Keywords</h3>
 <br>
-<h5>Import a CSV File</h5>
 <fieldset>
   <% if current_user %>
+      <h5>Import a CSV File</h5>
       <%= form_tag import_keywords_path, multipart: true do %>
           <%= file_field_tag :file %>
-          <%= submit_tag "Import" %>
+          <%= submit_tag 'Import' %>
       <% end %>
   <% else %>
-      Login required for importing CSV.
+      Login above to importing CSV.
   <% end %>
 </fieldset>
 <hr>
-<table class="table table-striped table-bordered table-hover table-sm text-center">
-  <thead class="thead-inverse text-center">
+<table id='datatable' class="table table-striped table-hover text-center">
+  <thead class="text-strong">
   <tr>
-    <th class="text-center">ID</th>
     <th class="text-center">Query</th>
     <th class="text-center">Timestamp</th>
     <th class="text-center">Options</th>
@@ -24,11 +23,16 @@
   <tbody>
   <% @keywords.each do |keyword| %>
       <tr>
-        <td><%= keyword.id %></td>
-        <td class="text-left"><%= keyword.query %></td>
+        <td><%= best_in_place_if current_user, keyword, :query %></td>
         <td><%= keyword.updated_at %></td>
-        <td><%= link_to 'Show', keyword %></td>
+        <td><%= link_to 'Show', keyword %>
+          <% if current_user %>
+              &nbsp;|&nbsp;
+              <%= link_to 'Destroy', keyword, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <% end %>
+        </td>
       </tr>
   <% end %>
   </tbody>
 </table>
+<%#= will_paginate @keywords %>

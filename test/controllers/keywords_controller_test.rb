@@ -11,9 +11,24 @@ class KeywordsControllerTest < ActionDispatch::IntegrationTest
     assert_not_nil assigns(:keywords)
   end
 
-  test "should import CSV" do
-
-  end
+  # test "should import CSV file" do
+  #   csv_rows = <<-eos
+  #   ladaza
+  #   11street
+  #   ebay
+  #   eos
+  #
+  #   file = Tempfile.new('new_keywords.csv')
+  #   file.write(csv_rows)
+  #   file.rewind
+  #
+  #   assert_difference "Keyword.count", 3 do
+  #     post :csv_import, :file => Rack::Test::UploadedFile.new(file, 'text/csv')
+  #   end
+  #
+  #   assert_redirected_to root_url
+  #   assert_equal 'Query terms imported.', flash[:success]
+  # end
 
   test "should show keyword" do
     get keyword_url(@keyword)

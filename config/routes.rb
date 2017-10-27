@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :keywords, only: %i[index show] do
+  resources :keywords, except: %i[new create] do
     collection { post :import }
   end
 
