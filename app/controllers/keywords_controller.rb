@@ -18,8 +18,9 @@ class KeywordsController < ApplicationController
   def update
     respond_to do |format|
       if @keyword.update(keyword_params)
-        format.html { redirect_to @keyword, notice: 'Query was successfully updated.'}
+        format.html { redirect_to @keyword }
         format.json { head :no_content }
+        flash[:info] = 'Query was successfully updated.'
       else
         format.html { render action: 'edit' }
         format.json { render json: @keyword.errors, status: :unprocessable_entity }
@@ -30,8 +31,9 @@ class KeywordsController < ApplicationController
   def destroy
     @keyword.destroy
     respond_to do |format|
-      format.html { redirect_to keywords_url, notice: 'Query was successfully destroyed.'}
+      format.html { redirect_to keywords_url }
       format.json { head :no_content }
+      flash[:info] = 'Query was successfully destroyed.'
     end
   end
 

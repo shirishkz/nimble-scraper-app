@@ -19,6 +19,7 @@ gem 'best_in_place', github: 'bernat/best_in_place'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'nokogiri'
+gem 'jquery-datatables', github: 'mkhairi/jquery-datatables'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem 'will_paginate', github: 'mislav/will_paginate'

@@ -12,6 +12,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require datatables
 //= require bootstrap-sprockets
 //= require best_in_place
 //= require best_in_place.purr
@@ -20,6 +21,6 @@
 //= require turbolinks
 //= require_tree .
 
-// $(document).ready(function() {
-//   $("#datatable").dataTable();
-// });
+$(document).ready(function() {
+    $("#datatable").dataTable();
+});

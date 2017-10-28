@@ -25,17 +25,17 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="app-controllers-keywords_controller_rb.html">app/controllers/keywords_controller.rb</a></td>
-            <td class='right_align'><tt>35</tt></td>
-            <td class='right_align'><tt>18</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>85.71%</tt></div>
+            <td class='right_align'><tt>57</tt></td>
+            <td class='right_align'><tt>33</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>87.72%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:86px"></div>
-        <div class="uncovered" style="width:14px"></div>
+        <div class="covered" style="width:88px"></div>
+        <div class="uncovered" style="width:12px"></div>
       </div></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>72.22%</tt></div>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>78.79%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:72px"></div>
-        <div class="uncovered" style="width:28px"></div>
+        <div class="covered" style="width:79px"></div>
+        <div class="uncovered" style="width:21px"></div>
       </div></td>
           </tr>
         </tbody>
@@ -54,82 +54,82 @@
           <td><pre><a name="line2">2</a> class KeywordsController &lt; ApplicationController</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line3">3</a>   before_action :set_keyword, only: [:show]</pre></td>
+          <td><pre><a name="line3">3</a>   before_action :set_keyword, only: %i[show edit update destroy]</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line4">4</a> </pre></td>
         </tr>
-        <tr class="inferred">
-          <td><pre><a name="line5">5</a>   # GET /keywords</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line6">6</a>   # GET /keywords.json</pre></td>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>   def index</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line7">7</a>   def index</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line8">8</a>     @keywords = Keyword.all.sort_by(&amp;:id)</pre></td>
+          <td><pre><a name="line6">6</a>     @keywords = Keyword.all.sort_by(&amp;:updated_at)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line9">9</a>   end</pre></td>
+          <td><pre><a name="line7">7</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line10">10</a> </pre></td>
+          <td><pre><a name="line8">8</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   def show</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>     page = Nokogiri::HTML(open(&quot;https://www.google.com/search?q=#{CGI.escape(@keyword.query)}&quot;))</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>     url_list = page.css(&#39;cite&#39;)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>     @url_adword_top = url_list.take(@keyword.adword_sum)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>     @url_non_adword = url_list.drop(@keyword.adword_sum)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line11">11</a>   # GET /keywords/1</pre></td>
+          <td><pre><a name="line14">14</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line12">12</a>   # GET /keywords/1.json</pre></td>
+          <td><pre><a name="line15">15</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line13">13</a>   def show</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line14">14</a>     page = Nokogiri::HTML(open(&quot;https://www.google.com/search?q=#{CGI.escape(@keyword.query)}&quot;))</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line15">15</a>     url_list = page.css(&#39;cite&#39;)</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line16">16</a>     @url_adword_top = url_list.take(@keyword.adword_sum)</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line17">17</a>     @url_non_adword = url_list.drop(@keyword.adword_sum)</pre></td>
+          <td><pre><a name="line16">16</a>   def edit</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line18">18</a>   end</pre></td>
+          <td><pre><a name="line17">17</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line19">19</a> </pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line20">20</a>   # Import CSV to db</pre></td>
+          <td><pre><a name="line18">18</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line21">21</a>   def import</pre></td>
+          <td><pre><a name="line19">19</a>   def update</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>     respond_to do |format|</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>       if @keyword.update(keyword_params)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line22">22</a>         format.html { redirect_to @keyword, notice: &#39;Query was successfully updated.&#39;}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>         format.json { head :no_content }</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a>       else</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line22">22</a>     begin</pre></td>
+          <td><pre><a name="line25">25</a>         format.html { render action: &#39;edit&#39; }</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line23">23</a>       Keyword.import(params[:file])</pre></td>
-        </tr>
-        <tr class="uncovered">
-          <td><pre><a name="line24">24</a>       flash[:success] = &#39;Query terms imported.&#39;</pre></td>
+          <td><pre><a name="line26">26</a>         format.json { render json: @keyword.errors, status: :unprocessable_entity }</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line25">25</a>     rescue</pre></td>
-        </tr>
-        <tr class="uncovered">
-          <td><pre><a name="line26">26</a>       flash[:warning] = &#39;Invalid CSV file format.&#39;</pre></td>
+          <td><pre><a name="line27">27</a>       end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line27">27</a>     end</pre></td>
-        </tr>
-        <tr class="uncovered">
-          <td><pre><a name="line28">28</a>     redirect_to root_url</pre></td>
+          <td><pre><a name="line28">28</a>     end</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line29">29</a>   end</pre></td>
@@ -138,27 +138,93 @@
           <td><pre><a name="line30">30</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line31">31</a>   private</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line32">32</a>   # Use callbacks to share common setup or constraints between actions.</pre></td>
+          <td><pre><a name="line31">31</a>   def destroy</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line33">33</a>   def set_keyword</pre></td>
+          <td><pre><a name="line32">32</a>     @keyword.destroy</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line34">34</a>     @keyword = Keyword.find(params[:id])</pre></td>
+          <td><pre><a name="line33">33</a>     respond_to do |format|</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line34">34</a>       format.html { redirect_to keywords_url, notice: &#39;Query was successfully destroyed.&#39;}</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line35">35</a>       format.json { head :no_content }</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line35">35</a>   end</pre></td>
+          <td><pre><a name="line36">36</a>     end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line36">36</a> end</pre></td>
+          <td><pre><a name="line37">37</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line39">39</a>   # Import CSV to db</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>   def import</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line41">41</a>     begin</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line42">42</a>       Keyword.import(params[:file])</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line43">43</a>       flash[:success] = &#39;Query terms imported.&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a>     rescue</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line45">45</a>       flash[:warning] = &#39;Invalid CSV file format.&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line46">46</a>     end</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line47">47</a>     redirect_to root_url</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line50">50</a>   private</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line51">51</a>   def set_keyword</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line52">52</a>     @keyword = Keyword.find(params[:id])</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line53">53</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line54">54</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>   def keyword_params</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line56">56</a>     params.require(:keyword).permit(:query)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line57">57</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line58">58</a> end</pre></td>
         </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2017-10-23 23:00:30 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2017-10-28 19:19:55 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>

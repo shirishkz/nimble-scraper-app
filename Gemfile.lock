@@ -29,6 +29,12 @@ GIT
     will_paginate (3.1.6)
 
 GIT
+  remote: https://github.com/mkhairi/jquery-datatables.git
+  revision: 093e9f1f30e6e66053920d615409d3b422fd3b79
+  specs:
+    jquery-datatables (1.10.16)
+
+GIT
   remote: https://github.com/twbs/bootstrap-sass.git
   revision: 9766e0321371e091c8af8251750dc5e7606e0005
   specs:
@@ -296,6 +302,7 @@ DEPENDENCIES
   database_cleaner
   dotenv-rails
   jbuilder (~> 2.5)
+  jquery-datatables!
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   nokogiri
