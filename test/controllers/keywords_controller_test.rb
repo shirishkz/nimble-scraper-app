@@ -11,24 +11,24 @@ class KeywordsControllerTest < ActionDispatch::IntegrationTest
     assert_not_nil assigns(:keywords)
   end
 
-  # test "should import CSV file" do
-  #   csv_rows = <<-eos
-  #   ladaza
-  #   11street
-  #   ebay
-  #   eos
-  #
-  #   file = Tempfile.new('new_keywords.csv')
-  #   file.write(csv_rows)
-  #   file.rewind
-  #
-  #   assert_difference "Keyword.count", 3 do
-  #     post :csv_import, :file => Rack::Test::UploadedFile.new(file, 'text/csv')
-  #   end
-  #
-  #   assert_redirected_to root_url
-  #   assert_equal 'Query terms imported.', flash[:success]
-  # end
+  test "should import CSV file" do
+    csv_rows = <<-eos
+    ladaza
+    11street
+    ebay
+    eos
+
+    file = Tempfile.new('new_keywords.csv')
+    file.write(csv_rows)
+    file.rewind
+
+    assert_difference "Keyword.count", 3 do
+      post :csv_import, :file => Rack::Test::UploadedFile.new(file, 'text/csv')
+    end
+
+    assert_redirected_to root_url
+    assert_equal 'Query terms imported.', flash[:success]
+  end
 
   test 'should show keyword' do
     get keyword_url(@keyword)
@@ -45,13 +45,13 @@ class KeywordsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to keyword_url(@keyword)
   end
 
-  # test 'should validate keyword on update' do
-  #   # sign_in users(:one)
-  #   patch keyword_url(@keyword), params: { keyword: { query: keywords(:two).query } }
-  #   assert_response :success
-  #   assert_template 'edit'
-  #   assert_select 'li', 'Keyword has already been taken'
-  # end
+  test 'should validate keyword on update' do
+    # sign_in users(:one)
+    patch keyword_url(@keyword), params: { keyword: { query: keywords(:two).query } }
+    assert_response :success
+    assert_template 'edit'
+    assert_select 'li', 'Keyword has already been taken'
+  end
 
   test 'should destroy keyword' do
     assert_difference('Keyword.count', -1) do

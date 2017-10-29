@@ -3,7 +3,7 @@ ruby '2.4.2'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
 
@@ -18,10 +18,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'best_in_place', github: 'bernat/best_in_place'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
 gem 'dotenv-rails', groups: %i[development test]
-gem 'nokogiri'
 gem 'jquery-datatables', github: 'mkhairi/jquery-datatables'
+gem 'nokogiri'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
+gem 'rubocop', github: 'bbatsov/rubocop'
 gem 'will_paginate', github: 'mislav/will_paginate'
 
 gem 'coffee-rails', '~> 4.2'
@@ -37,9 +38,9 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'web-console', '>= 3.3.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do

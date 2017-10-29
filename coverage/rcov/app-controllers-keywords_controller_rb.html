@@ -25,17 +25,17 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="app-controllers-keywords_controller_rb.html">app/controllers/keywords_controller.rb</a></td>
-            <td class='right_align'><tt>57</tt></td>
-            <td class='right_align'><tt>33</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>87.72%</tt></div>
+            <td class='right_align'><tt>59</tt></td>
+            <td class='right_align'><tt>35</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>88.14%</tt></div>
       <div class="percent_graph">
         <div class="covered" style="width:88px"></div>
         <div class="uncovered" style="width:12px"></div>
       </div></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>78.79%</tt></div>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>80.00%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:79px"></div>
-        <div class="uncovered" style="width:21px"></div>
+        <div class="covered" style="width:80px"></div>
+        <div class="uncovered" style="width:20px"></div>
       </div></td>
           </tr>
         </tbody>
@@ -111,120 +111,126 @@
           <td><pre><a name="line21">21</a>       if @keyword.update(keyword_params)</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line22">22</a>         format.html { redirect_to @keyword, notice: &#39;Query was successfully updated.&#39;}</pre></td>
+          <td><pre><a name="line22">22</a>         format.html { redirect_to @keyword }</pre></td>
         </tr>
         <tr class="marked">
           <td><pre><a name="line23">23</a>         format.json { head :no_content }</pre></td>
         </tr>
+        <tr class="marked">
+          <td><pre><a name="line24">24</a>         flash[:info] = &#39;Query was successfully updated.&#39;</pre></td>
+        </tr>
         <tr class="inferred">
-          <td><pre><a name="line24">24</a>       else</pre></td>
+          <td><pre><a name="line25">25</a>       else</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line25">25</a>         format.html { render action: &#39;edit&#39; }</pre></td>
+          <td><pre><a name="line26">26</a>         format.html { render action: &#39;edit&#39; }</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line26">26</a>         format.json { render json: @keyword.errors, status: :unprocessable_entity }</pre></td>
+          <td><pre><a name="line27">27</a>         format.json { render json: @keyword.errors, status: :unprocessable_entity }</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line27">27</a>       end</pre></td>
+          <td><pre><a name="line28">28</a>       end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line28">28</a>     end</pre></td>
+          <td><pre><a name="line29">29</a>     end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line29">29</a>   end</pre></td>
+          <td><pre><a name="line30">30</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line30">30</a> </pre></td>
+          <td><pre><a name="line31">31</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line31">31</a>   def destroy</pre></td>
+          <td><pre><a name="line32">32</a>   def destroy</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line32">32</a>     @keyword.destroy</pre></td>
+          <td><pre><a name="line33">33</a>     @keyword.destroy</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line33">33</a>     respond_to do |format|</pre></td>
+          <td><pre><a name="line34">34</a>     respond_to do |format|</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line34">34</a>       format.html { redirect_to keywords_url, notice: &#39;Query was successfully destroyed.&#39;}</pre></td>
+          <td><pre><a name="line35">35</a>       format.html { redirect_to keywords_url }</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line35">35</a>       format.json { head :no_content }</pre></td>
+          <td><pre><a name="line36">36</a>       format.json { head :no_content }</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a>       flash[:info] = &#39;Query was successfully destroyed.&#39;</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line36">36</a>     end</pre></td>
+          <td><pre><a name="line38">38</a>     end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line37">37</a>   end</pre></td>
+          <td><pre><a name="line39">39</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line38">38</a> </pre></td>
+          <td><pre><a name="line40">40</a> </pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line39">39</a>   # Import CSV to db</pre></td>
+          <td><pre><a name="line41">41</a>   # Import CSV to db</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line40">40</a>   def import</pre></td>
+          <td><pre><a name="line42">42</a>   def import</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line41">41</a>     begin</pre></td>
+          <td><pre><a name="line43">43</a>     begin</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line42">42</a>       Keyword.import(params[:file])</pre></td>
+          <td><pre><a name="line44">44</a>       Keyword.import(params[:file])</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line43">43</a>       flash[:success] = &#39;Query terms imported.&#39;</pre></td>
+          <td><pre><a name="line45">45</a>       flash[:success] = &#39;Query terms imported.&#39;</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line44">44</a>     rescue</pre></td>
+          <td><pre><a name="line46">46</a>     rescue</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line45">45</a>       flash[:warning] = &#39;Invalid CSV file format.&#39;</pre></td>
+          <td><pre><a name="line47">47</a>       flash[:warning] = &#39;Invalid CSV file format.&#39;</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line46">46</a>     end</pre></td>
+          <td><pre><a name="line48">48</a>     end</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line47">47</a>     redirect_to root_url</pre></td>
+          <td><pre><a name="line49">49</a>     redirect_to root_url</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line48">48</a>   end</pre></td>
+          <td><pre><a name="line50">50</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line49">49</a> </pre></td>
+          <td><pre><a name="line51">51</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line50">50</a>   private</pre></td>
+          <td><pre><a name="line52">52</a>   private</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line51">51</a>   def set_keyword</pre></td>
+          <td><pre><a name="line53">53</a>   def set_keyword</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line52">52</a>     @keyword = Keyword.find(params[:id])</pre></td>
+          <td><pre><a name="line54">54</a>     @keyword = Keyword.find(params[:id])</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line53">53</a>   end</pre></td>
+          <td><pre><a name="line55">55</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line54">54</a> </pre></td>
+          <td><pre><a name="line56">56</a> </pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line55">55</a>   def keyword_params</pre></td>
+          <td><pre><a name="line57">57</a>   def keyword_params</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line56">56</a>     params.require(:keyword).permit(:query)</pre></td>
+          <td><pre><a name="line58">58</a>     params.require(:keyword).permit(:query)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line57">57</a>   end</pre></td>
+          <td><pre><a name="line59">59</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line58">58</a> end</pre></td>
+          <td><pre><a name="line60">60</a> end</pre></td>
         </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2017-10-28 19:19:55 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2017-10-29 23:07:55 +0700 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>
