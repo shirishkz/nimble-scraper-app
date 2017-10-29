@@ -46,7 +46,6 @@ class KeywordsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should validate keyword on update' do
-    # sign_in users(:one)
     patch keyword_url(@keyword), params: { keyword: { query: keywords(:two).query } }
     assert_response :success
     assert_template 'edit'
