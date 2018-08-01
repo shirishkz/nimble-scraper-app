@@ -1,4 +1,4 @@
-ruby '2.5.0'
+ruby '2.5.1'
 
 source 'https://rubygems.org'
 
@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'best_in_place', github: 'bernat/best_in_place'
