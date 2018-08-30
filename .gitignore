@@ -13,8 +13,7 @@
 !/log/.keep
 !/tmp/.keep
 .idea
-.env
-Gemfile.lock 
+.env 
 
 /node_modules
 /yarn-error.log
