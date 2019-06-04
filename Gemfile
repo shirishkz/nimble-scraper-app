@@ -20,6 +20,7 @@ gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'jquery-datatables', github: 'mkhairi/jquery-datatables'
 gem 'nokogiri'
+gem 'omniauth-rails'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
 gem 'rubocop-rails'
