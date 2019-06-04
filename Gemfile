@@ -1,4 +1,4 @@
-ruby '2.6.0'
+ruby '2.6.3'
 
 source 'https://rubygems.org'
 
@@ -9,11 +9,11 @@ end
 
 gem 'rails'
 
-gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'pg'
+gem 'puma'
+gem 'sassc'
 gem 'mini_racer'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 
 gem 'best_in_place', github: 'bernat/best_in_place'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
@@ -22,25 +22,26 @@ gem 'jquery-datatables', github: 'mkhairi/jquery-datatables'
 gem 'nokogiri'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-twitter', github: 'arunagw/omniauth-twitter'
-gem 'rubocop', github: 'bbatsov/rubocop'
+gem 'rubocop-rails'
+gem 'rubocop-performance'
 gem 'will_paginate', github: 'mislav/will_paginate'
 
-gem 'coffee-rails', '~> 4.2'
-gem 'jbuilder', '~> 2.5'
+gem 'coffee-rails'
+gem 'jbuilder'
 gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'webdrivers'
 end
 
 group :development do
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'spring-watcher-listen'
+  gem 'web-console'
 end
 
 group :test do
