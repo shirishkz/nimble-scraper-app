@@ -6,11 +6,11 @@ A web​ application that​ will​ extract large amounts of​ data​ from​
 
 ### Prerequisites
  
-* Ruby version: 2.4.2
+* Ruby version: 2.6.3
 
-* Rails version: 5.1.4
+* Rails version: 5.2.3
 
-* Database: PostgresSQL
+* Database: PostgresSQL 11.3
 
 * Front-end Framework: Twitter Bootstrap 4
 
