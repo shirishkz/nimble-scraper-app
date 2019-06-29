@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/user.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/user.rb": [
         1,
         1,
         0,
@@ -10,12 +10,12 @@
         null,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/application_record.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/keyword.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/keyword.rb": [
         1,
         1,
         0,
@@ -47,7 +47,7 @@
         null,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/keywords_controller.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/keywords_controller.rb": [
         1,
         1,
         null,
@@ -108,7 +108,7 @@
         null,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/application_controller.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -120,41 +120,41 @@
         1,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/application_helper.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/keywords_helper.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/keywords_helper.rb": [
         1,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/sessions_helper.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/mailers/application_mailer.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/channels/application_cable/connection.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/channels/application_cable/channel.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/jobs/application_job.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/sessions_controller.rb": [
+      "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/sessions_controller.rb": [
         0,
         0,
         0,

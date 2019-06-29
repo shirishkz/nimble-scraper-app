@@ -3,7 +3,7 @@
   "command_name": "RSpec",
   "files": [
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/channels/application_cable/channel.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/channels/application_cable/channel.rb",
       "covered_percent": 0.0,
       "coverage": [
         0,
@@ -16,7 +16,7 @@
       "lines_of_code": 4
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/channels/application_cable/connection.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/channels/application_cable/connection.rb",
       "covered_percent": 0.0,
       "coverage": [
         0,
@@ -29,7 +29,7 @@
       "lines_of_code": 4
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/application_controller.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/application_controller.rb",
       "covered_percent": 100.0,
       "coverage": [
         1,
@@ -48,7 +48,7 @@
       "lines_of_code": 6
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/keywords_controller.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/keywords_controller.rb",
       "covered_percent": 80.0,
       "coverage": [
         1,
@@ -116,7 +116,7 @@
       "lines_of_code": 35
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/controllers/sessions_controller.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/controllers/sessions_controller.rb",
       "covered_percent": 0.0,
       "coverage": [
         0,
@@ -145,7 +145,7 @@
       "lines_of_code": 18
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/application_helper.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/application_helper.rb",
       "covered_percent": 100.0,
       "coverage": [
         1,
@@ -156,7 +156,7 @@
       "lines_of_code": 1
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/keywords_helper.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/keywords_helper.rb",
       "covered_percent": 100.0,
       "coverage": [
         1,
@@ -167,7 +167,7 @@
       "lines_of_code": 1
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/helpers/sessions_helper.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/helpers/sessions_helper.rb",
       "covered_percent": 100.0,
       "coverage": [
         1,
@@ -178,7 +178,7 @@
       "lines_of_code": 1
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/jobs/application_job.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/jobs/application_job.rb",
       "covered_percent": 0.0,
       "coverage": [
         0,
@@ -189,7 +189,7 @@
       "lines_of_code": 2
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/mailers/application_mailer.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/mailers/application_mailer.rb",
       "covered_percent": 0.0,
       "coverage": [
         0,
@@ -202,7 +202,7 @@
       "lines_of_code": 4
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/application_record.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/application_record.rb",
       "covered_percent": 100.0,
       "coverage": [
         1,
@@ -214,7 +214,7 @@
       "lines_of_code": 2
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/keyword.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/keyword.rb",
       "covered_percent": 9.090909090909092,
       "coverage": [
         1,
@@ -253,7 +253,7 @@
       "lines_of_code": 22
     },
     {
-      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper/app/models/user.rb",
+      "filename": "/home/shirishk/Documents/RubymineProjects/nimble-scraper-app/app/models/user.rb",
       "covered_percent": 40.0,
       "coverage": [
         1,

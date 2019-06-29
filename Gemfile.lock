@@ -23,14 +23,6 @@ GIT
       omniauth (>= 1.3.1)
 
 GIT
-  remote: https://github.com/intridea/omniauth-github.git
-  revision: 2e77639f32c35598e398c0c591ffab37691cdee7
-  specs:
-    omniauth-github (1.3.0)
-      omniauth (~> 1.5)
-      omniauth-oauth2 (>= 1.4.0, < 2.0)
-
-GIT
   remote: https://github.com/mislav/will_paginate.git
   revision: 63e84fb7e7508231ca83d94c524bfab5fbe9a578
   specs:
@@ -41,6 +33,14 @@ GIT
   revision: 38b57f7c56ef55922216d6766c916d7d18313cd5
   specs:
     jquery-datatables (1.10.19.1)
+
+GIT
+  remote: https://github.com/omniauth/omniauth-github.git
+  revision: 2e77639f32c35598e398c0c591ffab37691cdee7
+  specs:
+    omniauth-github (1.3.0)
+      omniauth (~> 1.5)
+      omniauth-oauth2 (>= 1.4.0, < 2.0)
 
 GIT
   remote: https://github.com/omniauth/omniauth-rails.git
