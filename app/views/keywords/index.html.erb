@@ -2,13 +2,13 @@
 <br>
 <fieldset>
   <% if current_user %>
-      <h5>Import a CSV File</h5>
-      <%= form_tag import_keywords_path, multipart: true do %>
-          <%= file_field_tag :file %>
-          <%= submit_tag 'Import' %>
-      <% end %>
+    <h5>Import a CSV File</h5>
+    <%= form_tag import_keywords_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag 'Import' %>
+    <% end %>
   <% else %>
-      Login above to importing CSV.
+    Login above to importing CSV.
   <% end %>
 </fieldset>
 <hr>
@@ -22,16 +22,16 @@
   </thead>
   <tbody>
   <% @keywords.each do |keyword| %>
-      <tr>
-        <td><%= best_in_place_if current_user, keyword, :query %></td>
-        <td><%= keyword.updated_at %></td>
-        <td><%= link_to 'Show', keyword %>
-          <% if current_user %>
-              &nbsp;|&nbsp;
-              <%= link_to 'Destroy', keyword, method: :delete, data: {confirm: 'Are you sure?'} %>
-          <% end %>
-        </td>
-      </tr>
+    <tr>
+      <td><%= best_in_place_if current_user, keyword, :query %></td>
+      <td><%= keyword.updated_at %></td>
+      <td><%= link_to 'Show', keyword %>
+        <% if current_user %>
+          &nbsp;|&nbsp;
+          <%= link_to 'Destroy', keyword, method: :delete, data: {confirm: 'Are you sure?'} %>
+        <% end %>
+      </td>
+    </tr>
   <% end %>
   </tbody>
 </table>

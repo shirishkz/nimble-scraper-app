@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :keywords, except: %i[new create] do
-    collection { post :import }
+    collection {post :import}
   end
 
   get '/auth/:provider/callback', to: 'sessions#create'

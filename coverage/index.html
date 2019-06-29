@@ -1,602 +1,644 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
-  <head>
+<head>
     <title>Code coverage for Nimble-scraper</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <script src='./assets/0.10.2/application.js' type='text/javascript'></script>
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
-    <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
-  </head>
-  
-  <body>
-    <div id="loading">
-      <img src="./assets/0.10.2/loading.gif" alt="loading"/>
-    </div>
-    <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-29T23:07:55+07:00">2017-10-29T23:07:55+07:00</abbr></div>
-      <ul class="group_tabs"></ul>
+    <link href="./assets/0.10.2/favicon_red.png" rel="shortcut icon" type="image/png"/>
+    <link href="./assets/0.10.2/favicon.png" rel="icon" type="image/png"/>
+</head>
 
-      <div id="content">
+<body>
+<div id="loading">
+    <img alt="loading" src="./assets/0.10.2/loading.gif"/>
+</div>
+<div id="wrapper" style="display:none;">
+    <div class="timestamp">Generated <abbr class="timeago"
+                                           title="2017-10-29T23:07:55+07:00">2017-10-29T23:07:55+07:00</abbr></div>
+    <ul class="group_tabs"></ul>
+
+    <div id="content">
         <div class="file_list_container" id="AllFiles">
-  <h2>
-    <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">40.95%</span></span>
-     covered at
-     <span class="covered_strength">
+            <h2>
+                <span class="group_name">All Files</span>
+                (<span class="covered_percent"><span class="red">40.95%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.61
        </span>
     </span> hits/line)
-  </h2>
-  <a name="AllFiles"></a>
-  <div>
-    <b>13</b> files in total.
-    <b>105</b> relevant lines. 
-    <span class="green"><b>43</b> lines covered</span> and
-    <span class="red"><b>62</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1d3e3015a03c86195c6a86bac8352ba95690db98" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#bdea90ffb21ae2063179338c3f5cc054116af9f6" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>2.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1c830be753baea6d71c5dfe44e0fb7d21d18f4b7" class="src_link" title="app/controllers/keywords_controller.rb">app/controllers/keywords_controller.rb</a></td>
-        <td class="red strong">80.0 %</td>
-        <td>59</td>
-        <td>35</td>
-        <td>28</td>
-        <td>7</td>
-        <td>1.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#6d4567b1cc75ccca807c32d97df95b1bff71dcc0" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>20</td>
-        <td>18</td>
-        <td>0</td>
-        <td>18</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#403726f8091bf70b78984a4d58c23e35b745f081" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#901f0aad7fa8e37933f7988c6865ccd73e80eea4" class="src_link" title="app/helpers/keywords_helper.rb">app/helpers/keywords_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#9227f64325d79db9e0843afab613c29c3d581d22" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1dbabdd70e1c9a77381caae0dfa16bc130b082c8" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>2</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#ce677ac4882b5a6248cb202681426cc40d3baa41" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#c47ef3b1d7e37462e22811cf589838605e54a056" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#665e4870262e45d7f6242bd8e74f7974fc4180d8" class="src_link" title="app/models/keyword.rb">app/models/keyword.rb</a></td>
-        <td class="red strong">9.09 %</td>
-        <td>30</td>
-        <td>22</td>
-        <td>2</td>
-        <td>20</td>
-        <td>0.1</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1d59e2cc5231c8264f2ef4bca2a818774c859d26" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="red strong">40.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>2</td>
-        <td>3</td>
-        <td>0.4</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="AllFiles"></a>
+            <div>
+                <b>13</b> files in total.
+                <b>105</b> relevant lines.
+                <span class="green"><b>43</b> lines covered</span> and
+                <span class="red"><b>62</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8"
+                                          title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1d3e3015a03c86195c6a86bac8352ba95690db98"
+                                          title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#bdea90ffb21ae2063179338c3f5cc054116af9f6"
+                                          title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>2.2</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1c830be753baea6d71c5dfe44e0fb7d21d18f4b7"
+                                          title="app/controllers/keywords_controller.rb">app/controllers/keywords_controller.rb</a>
+                    </td>
+                    <td class="red strong">80.0 %</td>
+                    <td>59</td>
+                    <td>35</td>
+                    <td>28</td>
+                    <td>7</td>
+                    <td>1.2</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#6d4567b1cc75ccca807c32d97df95b1bff71dcc0"
+                                          title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>20</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#403726f8091bf70b78984a4d58c23e35b745f081"
+                                          title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#901f0aad7fa8e37933f7988c6865ccd73e80eea4"
+                                          title="app/helpers/keywords_helper.rb">app/helpers/keywords_helper.rb</a></td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#9227f64325d79db9e0843afab613c29c3d581d22"
+                                          title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1dbabdd70e1c9a77381caae0dfa16bc130b082c8"
+                                          title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+                    <td class="red strong">0.0 %</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#ce677ac4882b5a6248cb202681426cc40d3baa41"
+                                          title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#c47ef3b1d7e37462e22811cf589838605e54a056"
+                                          title="app/models/application_record.rb">app/models/application_record.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#665e4870262e45d7f6242bd8e74f7974fc4180d8"
+                                          title="app/models/keyword.rb">app/models/keyword.rb</a></td>
+                    <td class="red strong">9.09 %</td>
+                    <td>30</td>
+                    <td>22</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>0.1</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1d59e2cc5231c8264f2ef4bca2a818774c859d26"
+                                          title="app/models/user.rb">app/models/user.rb</a></td>
+                    <td class="red strong">40.0 %</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0.4</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
 
 
-        
-          <div class="file_list_container" id="Controllers">
-  <h2>
-    <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">57.63%</span></span>
-     covered at
-     <span class="covered_strength">
+        <div class="file_list_container" id="Controllers">
+            <h2>
+                <span class="group_name">Controllers</span>
+                (<span class="covered_percent"><span class="red">57.63%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.94
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Controllers"></a>
-  <div>
-    <b>3</b> files in total.
-    <b>59</b> relevant lines. 
-    <span class="green"><b>34</b> lines covered</span> and
-    <span class="red"><b>25</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#bdea90ffb21ae2063179338c3f5cc054116af9f6" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>2.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1c830be753baea6d71c5dfe44e0fb7d21d18f4b7" class="src_link" title="app/controllers/keywords_controller.rb">app/controllers/keywords_controller.rb</a></td>
-        <td class="red strong">80.0 %</td>
-        <td>59</td>
-        <td>35</td>
-        <td>28</td>
-        <td>7</td>
-        <td>1.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#6d4567b1cc75ccca807c32d97df95b1bff71dcc0" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>20</td>
-        <td>18</td>
-        <td>0</td>
-        <td>18</td>
-        <td>0.0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Controllers"></a>
+            <div>
+                <b>3</b> files in total.
+                <b>59</b> relevant lines.
+                <span class="green"><b>34</b> lines covered</span> and
+                <span class="red"><b>25</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Channels">
-  <h2>
-    <span class="group_name">Channels</span>
-    (<span class="covered_percent"><span class="red">0.0%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#bdea90ffb21ae2063179338c3f5cc054116af9f6"
+                                          title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>2.2</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1c830be753baea6d71c5dfe44e0fb7d21d18f4b7"
+                                          title="app/controllers/keywords_controller.rb">app/controllers/keywords_controller.rb</a>
+                    </td>
+                    <td class="red strong">80.0 %</td>
+                    <td>59</td>
+                    <td>35</td>
+                    <td>28</td>
+                    <td>7</td>
+                    <td>1.2</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#6d4567b1cc75ccca807c32d97df95b1bff71dcc0"
+                                          title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>20</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>0.0</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Channels">
+            <h2>
+                <span class="group_name">Channels</span>
+                (<span class="covered_percent"><span class="red">0.0%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.0
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Channels"></a>
-  <div>
-    <b>2</b> files in total.
-    <b>8</b> relevant lines. 
-    <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>8</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1d3e3015a03c86195c6a86bac8352ba95690db98" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Channels"></a>
+            <div>
+                <b>2</b> files in total.
+                <b>8</b> relevant lines.
+                <span class="green"><b>0</b> lines covered</span> and
+                <span class="red"><b>8</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Models">
-  <h2>
-    <span class="group_name">Models</span>
-    (<span class="covered_percent"><span class="red">20.69%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8"
+                                          title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1d3e3015a03c86195c6a86bac8352ba95690db98"
+                                          title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Models">
+            <h2>
+                <span class="group_name">Models</span>
+                (<span class="covered_percent"><span class="red">20.69%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.21
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Models"></a>
-  <div>
-    <b>3</b> files in total.
-    <b>29</b> relevant lines. 
-    <span class="green"><b>6</b> lines covered</span> and
-    <span class="red"><b>23</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#c47ef3b1d7e37462e22811cf589838605e54a056" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#665e4870262e45d7f6242bd8e74f7974fc4180d8" class="src_link" title="app/models/keyword.rb">app/models/keyword.rb</a></td>
-        <td class="red strong">9.09 %</td>
-        <td>30</td>
-        <td>22</td>
-        <td>2</td>
-        <td>20</td>
-        <td>0.1</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1d59e2cc5231c8264f2ef4bca2a818774c859d26" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="red strong">40.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>2</td>
-        <td>3</td>
-        <td>0.4</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Models"></a>
+            <div>
+                <b>3</b> files in total.
+                <b>29</b> relevant lines.
+                <span class="green"><b>6</b> lines covered</span> and
+                <span class="red"><b>23</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Mailers">
-  <h2>
-    <span class="group_name">Mailers</span>
-    (<span class="covered_percent"><span class="red">0.0%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#c47ef3b1d7e37462e22811cf589838605e54a056"
+                                          title="app/models/application_record.rb">app/models/application_record.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#665e4870262e45d7f6242bd8e74f7974fc4180d8"
+                                          title="app/models/keyword.rb">app/models/keyword.rb</a></td>
+                    <td class="red strong">9.09 %</td>
+                    <td>30</td>
+                    <td>22</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>0.1</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1d59e2cc5231c8264f2ef4bca2a818774c859d26"
+                                          title="app/models/user.rb">app/models/user.rb</a></td>
+                    <td class="red strong">40.0 %</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0.4</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Mailers">
+            <h2>
+                <span class="group_name">Mailers</span>
+                (<span class="covered_percent"><span class="red">0.0%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.0
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Mailers"></a>
-  <div>
-    <b>1</b> files in total.
-    <b>4</b> relevant lines. 
-    <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#ce677ac4882b5a6248cb202681426cc40d3baa41" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Mailers"></a>
+            <div>
+                <b>1</b> files in total.
+                <b>4</b> relevant lines.
+                <span class="green"><b>0</b> lines covered</span> and
+                <span class="red"><b>4</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Helpers">
-  <h2>
-    <span class="group_name">Helpers</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#ce677ac4882b5a6248cb202681426cc40d3baa41"
+                                          title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a>
+                    </td>
+                    <td class="red strong">0.0 %</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Helpers">
+            <h2>
+                <span class="group_name">Helpers</span>
+                (<span class="covered_percent"><span class="green">100.0%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="yellow">
          1.0
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Helpers"></a>
-  <div>
-    <b>3</b> files in total.
-    <b>3</b> relevant lines. 
-    <span class="green"><b>3</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#403726f8091bf70b78984a4d58c23e35b745f081" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#901f0aad7fa8e37933f7988c6865ccd73e80eea4" class="src_link" title="app/helpers/keywords_helper.rb">app/helpers/keywords_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#9227f64325d79db9e0843afab613c29c3d581d22" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Helpers"></a>
+            <div>
+                <b>3</b> files in total.
+                <b>3</b> relevant lines.
+                <span class="green"><b>3</b> lines covered</span> and
+                <span class="red"><b>0</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Jobs">
-  <h2>
-    <span class="group_name">Jobs</span>
-    (<span class="covered_percent"><span class="red">0.0%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#403726f8091bf70b78984a4d58c23e35b745f081"
+                                          title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a>
+                    </td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#901f0aad7fa8e37933f7988c6865ccd73e80eea4"
+                                          title="app/helpers/keywords_helper.rb">app/helpers/keywords_helper.rb</a></td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td class="strong"><a class="src_link" href="#9227f64325d79db9e0843afab613c29c3d581d22"
+                                          title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
+                    <td class="green strong">100.0 %</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1.0</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Jobs">
+            <h2>
+                <span class="group_name">Jobs</span>
+                (<span class="covered_percent"><span class="red">0.0%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.0
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Jobs"></a>
-  <div>
-    <b>1</b> files in total.
-    <b>2</b> relevant lines. 
-    <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#1dbabdd70e1c9a77381caae0dfa16bc130b082c8" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>2</td>
-        <td>0.0</td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Jobs"></a>
+            <div>
+                <b>1</b> files in total.
+                <b>2</b> relevant lines.
+                <span class="green"><b>0</b> lines covered</span> and
+                <span class="red"><b>2</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-          <div class="file_list_container" id="Libraries">
-  <h2>
-    <span class="group_name">Libraries</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
-     covered at
-     <span class="covered_strength">
+                <tr>
+                    <td class="strong"><a class="src_link" href="#1dbabdd70e1c9a77381caae0dfa16bc130b082c8"
+                                          title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+                    <td class="red strong">0.0 %</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0.0</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="file_list_container" id="Libraries">
+            <h2>
+                <span class="group_name">Libraries</span>
+                (<span class="covered_percent"><span class="green">100.0%</span></span>
+                covered at
+                <span class="covered_strength">
        <span class="red">
          0.0
        </span>
     </span> hits/line)
-  </h2>
-  <a name="Libraries"></a>
-  <div>
-    <b>0</b> files in total.
-    <b>0.0</b> relevant lines. 
-    <span class="green"><b>0.0</b> lines covered</span> and
-    <span class="red"><b>0.0</b> lines missed </span>
-  </div>
-  <table class="file_list">
-    <thead>
-      <tr>
-        <th>File</th>
-        <th>% covered</th>
-        <th>Lines</th>
-        <th>Relevant Lines</th>
-        <th>Lines covered</th>
-        <th>Lines missed</th>
-        <th>Avg. Hits / Line</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-    </tbody>
-  </table>
-</div>
+            </h2>
+            <a name="Libraries"></a>
+            <div>
+                <b>0</b> files in total.
+                <b>0.0</b> relevant lines.
+                <span class="green"><b>0.0</b> lines covered</span> and
+                <span class="red"><b>0.0</b> lines missed </span>
+            </div>
+            <table class="file_list">
+                <thead>
+                <tr>
+                    <th>File</th>
+                    <th>% covered</th>
+                    <th>Lines</th>
+                    <th>Relevant Lines</th>
+                    <th>Lines covered</th>
+                    <th>Lines missed</th>
+                    <th>Avg. Hits / Line</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        
-      </div>
-    
-      <div id="footer">
-        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.15.1 
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.15.1
         and simplecov-html v0.10.2<br/>
         using RSpec
-      </div>
-    
-      <div class="source_files">
-      
-        <div class="source_table" id="c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8">
-  <div class="header">
-    <h3>app/channels/application_cable/channel.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
     </div>
-  </div>
-  
-  <pre>
+
+    <div class="source_files">
+
+        <div class="source_table" id="c9859490c8ae4caa6ad6b4f1cc910abeb82c29b8">
+            <div class="header">
+                <h3>app/channels/application_cable/channel.rb</h3>
+                <h4><span class="red">0.0 %</span> covered</h4>
+                <div>
+                    <b>4</b> relevant lines.
+                    <span class="green"><b>0</b> lines covered</span> and
+                    <span class="red"><b>4</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="missed" data-hits="0" data-linenumber="1">
@@ -625,21 +667,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="1d3e3015a03c86195c6a86bac8352ba95690db98">
-  <div class="header">
-    <h3>app/channels/application_cable/connection.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/channels/application_cable/connection.rb</h3>
+                <h4><span class="red">0.0 %</span> covered</h4>
+                <div>
+                    <b>4</b> relevant lines.
+                    <span class="green"><b>0</b> lines covered</span> and
+                    <span class="red"><b>4</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="missed" data-hits="0" data-linenumber="1">
@@ -668,21 +710,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="bdea90ffb21ae2063179338c3f5cc054116af9f6">
-  <div class="header">
-    <h3>app/controllers/application_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/controllers/application_controller.rb</h3>
+                <h4><span class="green">100.0 %</span> covered</h4>
+                <div>
+                    <b>6</b> relevant lines.
+                    <span class="green"><b>6</b> lines covered</span> and
+                    <span class="red"><b>0</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -747,21 +789,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="1c830be753baea6d71c5dfe44e0fb7d21d18f4b7">
-  <div class="header">
-    <h3>app/controllers/keywords_controller.rb</h3>
-    <h4><span class="red">80.0 %</span> covered</h4>
-    <div>
-      <b>35</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/controllers/keywords_controller.rb</h3>
+                <h4><span class="red">80.0 %</span> covered</h4>
+                <div>
+                    <b>35</b> relevant lines.
+                    <span class="green"><b>28</b> lines covered</span> and
+                    <span class="red"><b>7</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1120,21 +1162,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="6d4567b1cc75ccca807c32d97df95b1bff71dcc0">
-  <div class="header">
-    <h3>app/controllers/sessions_controller.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>18</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/controllers/sessions_controller.rb</h3>
+                <h4><span class="red">0.0 %</span> covered</h4>
+                <div>
+                    <b>18</b> relevant lines.
+                    <span class="green"><b>0</b> lines covered</span> and
+                    <span class="red"><b>18</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="missed" data-hits="0" data-linenumber="1">
@@ -1259,21 +1301,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="403726f8091bf70b78984a4d58c23e35b745f081">
-  <div class="header">
-    <h3>app/helpers/application_helper.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/helpers/application_helper.rb</h3>
+                <h4><span class="green">100.0 %</span> covered</h4>
+                <div>
+                    <b>1</b> relevant lines.
+                    <span class="green"><b>1</b> lines covered</span> and
+                    <span class="red"><b>0</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1290,21 +1332,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="901f0aad7fa8e37933f7988c6865ccd73e80eea4">
-  <div class="header">
-    <h3>app/helpers/keywords_helper.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/helpers/keywords_helper.rb</h3>
+                <h4><span class="green">100.0 %</span> covered</h4>
+                <div>
+                    <b>1</b> relevant lines.
+                    <span class="green"><b>1</b> lines covered</span> and
+                    <span class="red"><b>0</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1321,21 +1363,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="9227f64325d79db9e0843afab613c29c3d581d22">
-  <div class="header">
-    <h3>app/helpers/sessions_helper.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/helpers/sessions_helper.rb</h3>
+                <h4><span class="green">100.0 %</span> covered</h4>
+                <div>
+                    <b>1</b> relevant lines.
+                    <span class="green"><b>1</b> lines covered</span> and
+                    <span class="red"><b>0</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1352,21 +1394,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="1dbabdd70e1c9a77381caae0dfa16bc130b082c8">
-  <div class="header">
-    <h3>app/jobs/application_job.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/jobs/application_job.rb</h3>
+                <h4><span class="red">0.0 %</span> covered</h4>
+                <div>
+                    <b>2</b> relevant lines.
+                    <span class="green"><b>0</b> lines covered</span> and
+                    <span class="red"><b>2</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="missed" data-hits="0" data-linenumber="1">
@@ -1383,21 +1425,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="ce677ac4882b5a6248cb202681426cc40d3baa41">
-  <div class="header">
-    <h3>app/mailers/application_mailer.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/mailers/application_mailer.rb</h3>
+                <h4><span class="red">0.0 %</span> covered</h4>
+                <div>
+                    <b>4</b> relevant lines.
+                    <span class="green"><b>0</b> lines covered</span> and
+                    <span class="red"><b>4</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="missed" data-hits="0" data-linenumber="1">
@@ -1426,21 +1468,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="c47ef3b1d7e37462e22811cf589838605e54a056">
-  <div class="header">
-    <h3>app/models/application_record.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/models/application_record.rb</h3>
+                <h4><span class="green">100.0 %</span> covered</h4>
+                <div>
+                    <b>2</b> relevant lines.
+                    <span class="green"><b>2</b> lines covered</span> and
+                    <span class="red"><b>0</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1463,21 +1505,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="665e4870262e45d7f6242bd8e74f7974fc4180d8">
-  <div class="header">
-    <h3>app/models/keyword.rb</h3>
-    <h4><span class="red">9.09 %</span> covered</h4>
-    <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>20</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/models/keyword.rb</h3>
+                <h4><span class="red">9.09 %</span> covered</h4>
+                <div>
+                    <b>22</b> relevant lines.
+                    <span class="green"><b>2</b> lines covered</span> and
+                    <span class="red"><b>20</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1662,21 +1704,21 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
+
         <div class="source_table" id="1d59e2cc5231c8264f2ef4bca2a818774c859d26">
-  <div class="header">
-    <h3>app/models/user.rb</h3>
-    <h4><span class="red">40.0 %</span> covered</h4>
-    <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
+            <div class="header">
+                <h3>app/models/user.rb</h3>
+                <h4><span class="red">40.0 %</span> covered</h4>
+                <div>
+                    <b>5</b> relevant lines.
+                    <span class="green"><b>2</b> lines covered</span> and
+                    <span class="red"><b>3</b> lines missed.</span>
+                </div>
+            </div>
+
+            <pre>
     <ol>
       
         <li class="covered" data-hits="1" data-linenumber="1">
@@ -1723,10 +1765,10 @@
       
     </ol>
   </pre>
-</div>
+        </div>
 
-      
-      </div>
+
     </div>
-  </body>
+</div>
+</body>
 </html>

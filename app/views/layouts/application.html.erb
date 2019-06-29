@@ -3,7 +3,7 @@
 <head>
   <title>Nimble Scraper</title>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' =>'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
@@ -14,25 +14,25 @@
     </div>
     <div id="navbar">
       <% if current_user %>
-          <ul class="nav navbar-nav pull-right">
-            <li><%= current_user.name %></li>
-            &nbsp
-            <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
-          </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li><%= current_user.name %></li>
+          &nbsp
+          <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
+        </ul>
       <% else %>
-          <ul class="nav navbar-nav">
-            <li><%= link_to 'Twitter', '/auth/twitter' %></li>
-            <li><%= link_to 'GitHub', '/auth/github' %></li>
-          </ul>
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Twitter', '/auth/twitter' %></li>
+          <li><%= link_to 'GitHub', '/auth/github' %></li>
+        </ul>
       <% end %>
     </div>
   </div>
 </nav>
 <div class="container theme-showcase">
   <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>">
-        <%= value %>
-      </div>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
   <% end %>
   <%= yield %>
   <hr>

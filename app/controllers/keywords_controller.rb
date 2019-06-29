@@ -18,12 +18,12 @@ class KeywordsController < ApplicationController
   def update
     respond_to do |format|
       if @keyword.update(keyword_params)
-        format.html { redirect_to @keyword }
-        format.json { head :no_content }
+        format.html {redirect_to @keyword}
+        format.json {head :no_content}
         flash[:info] = 'Query was successfully updated.'
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @keyword.errors, status: :unprocessable_entity }
+        format.html {render action: 'edit'}
+        format.json {render json: @keyword.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -31,8 +31,8 @@ class KeywordsController < ApplicationController
   def destroy
     @keyword.destroy
     respond_to do |format|
-      format.html { redirect_to keywords_url }
-      format.json { head :no_content }
+      format.html {redirect_to keywords_url}
+      format.json {head :no_content}
       flash[:info] = 'Query was successfully destroyed.'
     end
   end
@@ -49,6 +49,7 @@ class KeywordsController < ApplicationController
   end
 
   private
+
   def set_keyword
     @keyword = Keyword.find(params[:id])
   end

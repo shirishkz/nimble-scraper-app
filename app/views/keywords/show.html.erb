@@ -18,55 +18,55 @@
 
 <p>
   <strong>URL's of​ AdWords​ - Top Position: </strong>
-    <% if @url_adword_top.all? &:nil? %>
+  <% if @url_adword_top.all? &:nil? %>
+    <%= 'N/A' %>
+  <% else %>
+    <br>
+    <ul>
+      <% @url_adword_top.each do |ads| %>
+        <li><%= ads.inner_text %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  </p>
+
+  <p>
+    <strong>URL's of​ AdWords​ - Bottom Position: </strong>
+    <%= 'N/A' %>
+  </p>
+
+  <p>
+    <strong>Number​ of​ non-AdWords​: </strong>
+    <%= @keyword.non_adwords_sum %>
+  </p>
+
+  <p>
+    <strong>URL's​ of​ non-AdWords​: </strong>
+    <% if @url_non_adword.all? &:nil? %>
       <%= 'N/A' %>
     <% else %>
       <br>
       <ul>
-        <% @url_adword_top.each do |ads| %>
-            <li><%= ads.inner_text %></li>
+        <% @url_non_adword.each do |non_ads| %>
+          <li><%= non_ads.inner_text %></li>
         <% end %>
       </ul>
     <% end %>
-</p>
+    </p>
 
-<p>
-  <strong>URL's of​ AdWords​ - Bottom Position: </strong>
-  <%= 'N/A' %>
-</p>
+    <p>
+      <strong>Total number of links: </strong>
+      <%= @keyword.total_links %>
+    </p>
 
-<p>
-  <strong>Number​ of​ non-AdWords​: </strong>
-  <%= @keyword.non_adwords_sum %>
-</p>
+    <p>
+      <strong>Total number of search results: </strong>
+      <%= @keyword.search_total %>
+    </p>
 
-<p>
-  <strong>URL's​ of​ non-AdWords​: </strong>
-  <% if @url_non_adword.all? &:nil? %>
-      <%= 'N/A' %>
-  <% else %>
-      <br>
-      <ul>
-        <% @url_non_adword.each do |non_ads| %>
-            <li><%= non_ads.inner_text %></li>
-        <% end %>
-      </ul>
-  <% end %>
-</p>
+    <p>
+      <strong>HTML cache of search: </strong>
+    </p>
 
-<p>
-  <strong>Total number of links: </strong>
-  <%= @keyword.total_links %>
-</p>
-
-<p>
-  <strong>Total number of search results: </strong>
-  <%= @keyword.search_total %>
-</p>
-
-<p>
-  <strong>HTML cache of search: </strong>
-</p>
-
-<br>
-<%= link_to 'Back', keywords_path %>
+    <br>
+    <%= link_to 'Back', keywords_path %>

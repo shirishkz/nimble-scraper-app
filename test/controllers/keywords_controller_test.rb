@@ -41,12 +41,12 @@ class KeywordsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update keyword' do
-    patch keyword_url(@keyword), params: { keyword: { adword_bottom: @keyword.adword_bottom, adword_sum: @keyword.adword_sum, adword_top: @keyword.adword_top, non_adwords_sum: @keyword.non_adwords_sum, query: @keyword.query, search_total: @keyword.search_total, total_links: @keyword.total_links } }
+    patch keyword_url(@keyword), params: {keyword: {adword_bottom: @keyword.adword_bottom, adword_sum: @keyword.adword_sum, adword_top: @keyword.adword_top, non_adwords_sum: @keyword.non_adwords_sum, query: @keyword.query, search_total: @keyword.search_total, total_links: @keyword.total_links}}
     assert_redirected_to keyword_url(@keyword)
   end
 
   test 'should validate keyword on update' do
-    patch keyword_url(@keyword), params: { keyword: { query: keywords(:two).query } }
+    patch keyword_url(@keyword), params: {keyword: {query: keywords(:two).query}}
     assert_response :success
     assert_template 'edit'
     assert_select 'li', 'Keyword has already been taken'

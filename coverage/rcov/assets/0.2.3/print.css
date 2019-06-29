@@ -1,12 +1,12 @@
 /* Hide controls */
 
-  body {
+body {
     color: #000000;
     background-color: #ffffff;
-  }
+}
 
 /* Hide controls */
 
-  div.filters {
+div.filters {
     display: none;
-  }
+}
