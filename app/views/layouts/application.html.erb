@@ -10,19 +10,19 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
     <div class="navbar-header">
-      <%= button_to 'Nimble Scraper', root_path, class: 'navbar-brand' %>
+      <%= link_to 'Nimble Scraper', root_path, class: 'navbar-brand' %>
     </div>
     <div id="navbar">
       <% if current_user %>
           <ul class="nav navbar-nav pull-right">
             <li><%= current_user.name %></li>
             &nbsp
-            <li><%= button_to 'Log Out', logout_path, method: :delete %></li>
+            <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
           </ul>
       <% else %>
           <ul class="nav navbar-nav">
-            <li><%= button_to 'Twitter', '/auth/twitter' %></li>
-            <li><%= button_to 'GitHub', '/auth/github' %></li>
+            <li><%= link_to 'Twitter', '/auth/twitter' %></li>
+            <li><%= link_to 'GitHub', '/auth/github' %></li>
           </ul>
       <% end %>
     </div>
