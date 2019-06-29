@@ -9,6 +9,7 @@ end
 
 gem 'best_in_place', github: 'bernat/best_in_place'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
+gem 'bundler'
 gem 'coffee-rails'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'jbuilder'
