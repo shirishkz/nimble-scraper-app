@@ -24,6 +24,22 @@ GIT
       railties (>= 3.2, < 6.1)
 
 GIT
+  remote: https://github.com/colszowka/simplecov.git
+  revision: aca64dad48c988860929f7a2a24ebe13a2d00ff1
+  specs:
+    simplecov (0.16.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+
+GIT
+  remote: https://github.com/fguillen/simplecov-rcov.git
+  revision: 4311cceb04b6767a2478cfc1582dbb61e07157bd
+  specs:
+    simplecov-rcov (0.2.3)
+      simplecov (>= 0.4.1)
+
+GIT
   remote: https://github.com/mislav/will_paginate.git
   revision: 63e84fb7e7508231ca83d94c524bfab5fbe9a578
   specs:
@@ -58,6 +74,14 @@ GIT
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+
+GIT
+  remote: https://github.com/vicentllongo/simplecov-json.git
+  revision: dfdf187383dd7038ed37c8107da57a5d5d3ee759
+  specs:
+    simplecov-json (0.2)
+      json
+      simplecov
 
 GIT
   remote: https://github.com/zquestz/omniauth-google-oauth2.git
@@ -131,6 +155,7 @@ GEM
       xpath (~> 3.2)
     childprocess (1.0.1)
       rake (< 13.0)
+    coderay (1.1.2)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 5.2.0)
@@ -207,6 +232,11 @@ GEM
     parser (2.6.3.0)
       ast (~> 2.4.0)
     pg (1.1.4)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (3.1.1)
     puma (4.0.0)
       nio4r (~> 2.0)
@@ -291,16 +321,7 @@ GEM
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
-    simplecov (0.16.1)
-      docile (~> 1.1)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    simplecov-json (0.2)
-      json
-      simplecov
-    simplecov-rcov (0.2.3)
-      simplecov (>= 0.4.1)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -361,6 +382,7 @@ DEPENDENCIES
   omniauth-rails!
   omniauth-twitter!
   pg
+  pry-rails
   puma
   rails
   rails-controller-testing
@@ -369,9 +391,9 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   sassc-rails
-  simplecov
-  simplecov-json
-  simplecov-rcov
+  simplecov!
+  simplecov-json!
+  simplecov-rcov!
   spring
   spring-watcher-listen
   turbolinks

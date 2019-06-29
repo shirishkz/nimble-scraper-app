@@ -34,6 +34,7 @@ gem 'will_paginate', github: 'mislav/will_paginate'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
+  gem 'pry-rails'
   gem 'webdrivers'
 end
 
@@ -49,7 +50,7 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rspec-expectations'
   gem 'rspec-rails'
-  gem 'simplecov', require: false
-  gem 'simplecov-json', require: false
-  gem 'simplecov-rcov', require: false
+  gem 'simplecov', github: 'colszowka/simplecov', require: false
+  gem 'simplecov-json', github: 'vicentllongo/simplecov-json', require: false
+  gem 'simplecov-rcov', github: 'fguillen/simplecov-rcov', require: false
 end
