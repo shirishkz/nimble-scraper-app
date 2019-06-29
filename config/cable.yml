@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
-  channel_prefix: nimbl3-scraper_production
+  channel_prefix: nimble-scraper_production

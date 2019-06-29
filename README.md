@@ -1,6 +1,6 @@
 # README
 
-### Nimbl3 Scraper
+### Nimble Scraper
 
 A web​ application that​ will​ extract large amounts of​ data​ from​ the​ Google​ search results​ page. 
 
@@ -31,7 +31,7 @@ id,query
 
 ## License
 
-Nimbl3 Scraper is released under the [MIT License](https://opensource.org/licenses/MIT).
+Nimble Scraper is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Acknowledgments
 
