@@ -25,10 +25,10 @@
       <tr>
         <td><%= best_in_place_if current_user, keyword, :query %></td>
         <td><%= keyword.updated_at %></td>
-        <td><%= link_to 'Show', keyword %>
+        <td><%= button_to 'Show', keyword %>
           <% if current_user %>
               &nbsp;|&nbsp;
-              <%= link_to 'Destroy', keyword, method: :delete, data: {confirm: 'Are you sure?'} %>
+              <%= button_to 'Destroy', keyword, method: :delete, data: {confirm: 'Are you sure?'} %>
           <% end %>
         </td>
       </tr>
