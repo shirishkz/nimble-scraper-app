@@ -1,6 +1,6 @@
 # Nimble Scraper App 🛰
 
-A Web scraper app using Nokogiri that extracts relevant data from Google Search.
+A web scraper app using Nokogiri that extracts relevant data from Google Search
 
 ## Prerequisites
  
