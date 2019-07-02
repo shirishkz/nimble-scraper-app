@@ -68,6 +68,12 @@ GIT
       rails
 
 GIT
+  remote: https://github.com/scoutapp/scout_apm_ruby.git
+  revision: 6184218bbc44b8333fcd992ce45e72d8e8fd6239
+  specs:
+    scout_apm (2.5.1)
+
+GIT
   remote: https://github.com/twbs/bootstrap-sass.git
   revision: b34765d8a6aa775816c59012b2d6b30c4c66a8e9
   specs:
@@ -277,7 +283,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.5.1)
-    rspec-core (3.8.1)
+    rspec-core (3.8.2)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.4)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -391,6 +397,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   sassc-rails
+  scout_apm!
   simplecov!
   simplecov-json!
   simplecov-rcov!
