@@ -1,0 +1,10 @@
+common: &defaults
+  name: nimble-scraper-app
+  key: 9ooGeguDZgqK7aU48CvW
+  monitor: true
+
+test:
+  monitor: false
+
+production:
+  <<: *defaults
