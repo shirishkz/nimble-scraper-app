@@ -4,9 +4,9 @@ A web scraper app using Nokogiri that extracts relevant data from Google Search.
 
 ## Prerequisites
  
-- Ruby version: 2.6.3
+- Ruby version: 2.6.4
 
-- Rails version: 5.2.3
+- Rails version: 6.0.0
 
 - Database: PostgresSQL 11.4
 
